@@ -1,0 +1,94 @@
+.books-container-library {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 15px;
+}
+
+.books-container-library li {
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.list-content div {
+  text-align: center;
+  height: 220px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.list-content h3 {
+  color: #777777;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.list-content h4 {
+  color: #a7a5a5;
+  margin-bottom: 5px;
+}
+
+.list-content p {
+  text-align: right;
+  color: #28b8bb;
+  background-color: #d5f4f3;
+  display: inline-block;
+  padding: 2px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.link-card {
+  text-decoration: none;
+  color: #000000;
+}
+
+.delete-button {
+  width: 100%;
+  font-size: 15px;
+  padding: 8px;
+  color: #28b8bb;
+  border: 1px solid #28b8bb;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 6px 0 var(--primary-dark), 0 5px 15px -4px #000;
+  transition: box-shadow 0.2s ease-in-out, margin-top 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
+  margin-top: 8px;
+}
+
+.delete-button:hover,
+.delete-button:focus {
+  opacity: 0.9;
+  outline: 0;
+}
+
+.delete-button:active {
+  box-shadow: none;
+  margin-top: 6px;
+  background-color: #28b8bb;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .books-container-library {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .books-container-library {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

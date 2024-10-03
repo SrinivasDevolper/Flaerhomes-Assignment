@@ -68,3 +68,67 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Virtual Book Library
+
+## Project Overview
+
+The Virtual Book Library is a web application built with **React.js** that allows users to search for books and manage a collection of book titles. The project demonstrates the usage of React components, context for state management, and routing to navigate between pages.
+
+## Table of Contents
+
+1. [Project Structure](#project-structure)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Features](#features)
+5. [Technologies](#technologies)
+
+## Project Structure
+
+The project follows a standard React project structure to ensure maintainability and scalability.
+
+```bash
+📦 myapp
+|-📂public
+|- 📂 src
+| |- 📂 components
+| | |- 📂 BookDetails
+| | | |- 📜 index.js
+| | | |- 📜 index.css
+| | |- 📂 HomePage
+| | | |- 📜 index.js
+| | | |- 📜 index.css
+| | |- 📂 LibraryPage
+| | | |- 📜 index.js
+| | | |- 📜 index.css
+| | |- 📂 Navbar
+| | | |- 📜 index.js
+| | | |- 📜 index.css
+| | |- 📂 NoPage
+| | | |- 📜 index.js
+| | | |- 📜 JsonList.js
+| | | |- 📜 libraryCont.css
+| | | |- 📜 searchCont.css
+┃ ┣ 📜 App.js
+ ┣ 📜 package.json
+ ┣ 📜 README.md
+
+## Installation
+git clone https://github.com/your-username/Flaerhomes-Assignment.git
+cd myapp
+npm install
+
+## Usage
+npm start
+
+## Features
+- Search for books by title.
+- View a Added of books of list in the library.
+- Navigation between Home and Library pages.
+
+## Technologies
+- React.js: Frontend framework for building user interfaces.
+- React Router: For client-side routing.
+- CSS: Styling of the components.
+- React Context API: For managing global state.
+```

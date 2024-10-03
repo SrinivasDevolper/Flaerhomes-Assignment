@@ -1,0 +1,136 @@
+.book-details-container {
+  background-color: hsl(160, 43%, 96%);
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #ffffff;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  height: 50vh;
+}
+
+.image-cont {
+  background-color: rgb(255, 255, 255);
+  color: #252525;
+  background-color: #d5f4f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  margin-right: 25px;
+  width: 250px;
+}
+.image-cont h1 {
+  text-align: center;
+}
+.image-content-cont {
+  margin-top: 30px;
+}
+.image-content-cont h1 {
+  color: #000;
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+span {
+  font-style: italic;
+  font-size: 14px;
+  color: #5c6064;
+}
+
+.desc {
+  margin-top: 10px;
+}
+
+.button-cont {
+  margin: 10px;
+}
+
+.button {
+  width: 100%;
+  font-size: 15px;
+  padding: 8px;
+  color: #d5f4f3;
+  background-color: #28b8bb;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 6px 0 var(--primary-dark), 0 5px 15px -4px #000;
+  transition: box-shadow 0.2s ease-in-out, margin-top 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.9;
+  outline: 0;
+}
+
+.button:active {
+  box-shadow: none;
+  margin-top: 6px;
+}
+
+@media (max-width: 425px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    padding-bottom: 20px;
+  }
+  .image-cont {
+    margin-right: 0;
+    height: 60vh;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-content-cont {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .button {
+    width: 100%;
+    font-size: 15px;
+    padding: 8px;
+    color: #d5f4f3;
+    background-color: #28b8bb;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 0 var(--primary-dark), 0 5px 15px -4px #000;
+    transition: box-shadow 0.2s ease-in-out, margin-top 0.2s ease-in-out,
+      opacity 0.2s ease-in-out;
+  }
+
+  .button:hover,
+  .button:focus {
+    opacity: 0.9;
+    outline: 0;
+  }
+
+  .button:active {
+    box-shadow: none;
+    margin-top: 6px;
+  }
+}
